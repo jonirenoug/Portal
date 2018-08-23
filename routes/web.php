@@ -12,8 +12,6 @@
 */
 
 Route::get('/', function () {
-	$pdo = DB::connection()->getPdo();
-	var_dump($pdo);
 	if(DB::connection()->getDatabaseName())
    {
      echo "connected successfully to database ".DB::connection()->getDatabaseName();
