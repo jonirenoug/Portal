@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	if (DB::connection('myDamnDbConnection')->getDatabaseName()){
+	   return 'Connected to the DB: ' . DB::connection('myDamnDbConnection')->getDatabaseName();
+	} else {
+		return view('welcome');
+	}
 });
