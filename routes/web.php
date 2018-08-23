@@ -12,11 +12,11 @@
 */
 
 Route::get('/', function () {
-	$pdo = DB::connection()->getPdo()
+	$pdo = DB::connection()->getPdo();
 	var_dump($pdo);
-	if (DB::connection('myDamnDbConnection')->getDatabaseName()){
-	   return 'Connected to the DB: ' . DB::connection('myDamnDbConnection')->getDatabaseName();
-	} else {
-		return view('welcome');
-	}
+	if(DB::connection()->getDatabaseName())
+   {
+     echo "connected successfully to database ".DB::connection()->getDatabaseName();
+   }
+	return view('welcome');
 });
