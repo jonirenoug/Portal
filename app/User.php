@@ -32,8 +32,8 @@ class User extends Authenticatable
     public static function checkEmail($email){
         $check_email = User::where('email', $email)->first();
         if(!$check_email){
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
 }
