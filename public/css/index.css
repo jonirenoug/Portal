@@ -264,3 +264,6 @@ a.f-pass{
     box-shadow: 1px 1px 3px #ccc inset;
     border: 1px solid #979797;
 }
+#form-register label.error{
+    color: red;
+}
