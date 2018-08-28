@@ -50,11 +50,15 @@
         <div class="col-sm-12">
             <div class="copy_right"> &copy 2017-2019 Neighbourhood Work Pty.Ltd.All rights reserved <br> ABN: 52 621 871 403</div> 
         </div> 
+<<<<<<< HEAD
     </footer> 
     <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/dev.js?t=' . uniqid()) }}"></script>
+=======
+    </footer>
+>>>>>>> 13149d82becc96d2e41b3c217c795ccff71340a8
     @stack('scripts-bottom')
 
 </body>

@@ -28,7 +28,11 @@
 		        </ul>
 		    </div>
 			@endif
+<<<<<<< HEAD
 			<form id="form-register" action="{{ url('registerpost') }}" method="post">
+=======
+			<form id="form-register" action="{{ url('register') }}" method="post">
+>>>>>>> 13149d82becc96d2e41b3c217c795ccff71340a8
 				<div class="input-group">
 					<label>Team name</label>
 					
@@ -70,4 +74,8 @@
 @stop
 
 @push('scripts-bottom')
+<<<<<<< HEAD
+=======
+
+>>>>>>> 13149d82becc96d2e41b3c217c795ccff71340a8
 @endpush

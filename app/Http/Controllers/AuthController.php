@@ -8,9 +8,12 @@ use Illuminate\Support\MessageBag;
 use App\Mail\ResetMail;
 use Session;
 use Mail;
+<<<<<<< HEAD
 use App\User;
 use App\Members;
 
+=======
+>>>>>>> 13149d82becc96d2e41b3c217c795ccff71340a8
 
 class AuthController extends Controller
 {
@@ -19,11 +22,18 @@ class AuthController extends Controller
     }
     public function loginpost(Request $request) {
         $email = $request->input('email_address');
+<<<<<<< HEAD
         $password = $request->input('password');
 
         if(Auth::attempt(['email' => $email, 'password' =>$password])) {
             Session::put('userlogin',$email);
             return redirect()->intended('/home');
+=======
+        $password = $request->input('password');       
+        if(Auth::attempt(['email' => $email, 'password' =>$password])) {
+            Session::put('userlogin',$email);
+            return redirect()->intended('/');
+>>>>>>> 13149d82becc96d2e41b3c217c795ccff71340a8
         } else {
             $errors = new MessageBag(['errorlogin' => 'Incorrect email']);
             return redirect()->back()->withInput()->withErrors($errors);
@@ -36,6 +46,7 @@ class AuthController extends Controller
     public function register(){
         return view('register');
     }
+<<<<<<< HEAD
     public function registerpost(Request $request){
         if(!empty($request->input('first_name'))){
             $first_name = $request->input('first_name');
@@ -99,4 +110,6 @@ class AuthController extends Controller
         }        
         return redirect()->intended('/');
     }
+=======
+>>>>>>> 13149d82becc96d2e41b3c217c795ccff71340a8
 }
