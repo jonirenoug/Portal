@@ -55,7 +55,6 @@ class AuthController extends Controller
 
         // Check email
         $kt = User::checkEmail($email_address);
-
         if(isset($kt) && $kt == 1){
             // insert user and get user id
             $user_id = User::insertGetId([
