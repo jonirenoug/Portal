@@ -83,16 +83,16 @@ class AuthController extends Controller
                 'id_user' => $user_id,
                 'created_at' => date('Y-m-d'),
                 'updated_at'=> date('Y-m-d')
-            ]);
-            return redirect('/login')->with('success', 'Registration email has been sent. Please check!');
-            // if($user_id && $insert_member){
+            ]);   
+            if($user_id && $insert_member){
 
-            //     //Send mail register
-            //     $data_email = array('email_address' => $email_address, 'first_name' => $first_name );
-            //     Mail::send('template_email.confirmation_email', array('first_name'=> $first_name, 'token'=>$token), function($message) use ($data_email){
-            //         $message->to($data_email['email_address'],$data_email['first_name'])->subject('Confirmation email');
-            //     });
-            // }
+                //Send mail register
+                $data_email = array('email_address' => $email_address, 'first_name' => $first_name );
+                Mail::send('template_email.confirmation_email', array('first_name'=> $first_name, 'token'=>$token), function($message) use ($data_email){
+                    $message->to($data_email['email_address'],$data_email['first_name'])->subject('Confirmation email');
+                });
+            }
+            return redirect('/login')->with('success', 'Registration email has been sent. Please check!');
         }else{
             return redirect('register')->with('error', 'Email already exists');
         }        
