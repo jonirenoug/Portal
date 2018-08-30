@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(../glyphicons-halflings-regular.woff);
+}
+@font-face {
+  font-family: 'FjallaOne-Regular';
+  src: url('../fonts/FjallaOne-Regular.eot');
+  src: url('../fonts/FjallaOne-Regular.woff2') format('woff2'),
+       url('../fonts/FjallaOne-Regular.woff') format('woff'),
+       url('../fonts/FjallaOne-Regular.ttf') format('truetype'),
+       url('../fonts/FjallaOne-Regular.svg#FjallaOne-Regular') format('svg'),
+       url('../fonts/FjallaOne-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LibreFranklin-Regular';
+  src: url('../fonts/LibreFranklin-Regular.eot');
+  src: url('../fonts/LibreFranklin-Regular.woff2') format('woff2'),
+       url('../fonts/LibreFranklin-Regular.woff') format('woff'),
+       url('../fonts/LibreFranklin-Regular.ttf') format('truetype'),
+       url('../fonts/LibreFranklin-Regular.svg#LibreFranklin-Regular') format('svg'),
+       url('../fonts/LibreFranklin-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #000;
+	margin: 0px;
+	background: #f5f5f5;
+    transition: transform .3s;
+}
+main{
+    float: left;
+    width: 100%;
+    background: #fafafa;
+    padding: 0px;
+    overflow: hidden;
+    min-height: calc(100vh - 144px);
+}
+.box-logo{
+	float: left;
+}
+.box-menu{
+	float: right;
+}
+.container{
+	margin: 0 auto;
+}
+.content-select form{
+    padding: 0px calc(30px + 4%);
+}
+header{
+    padding: 12px calc(30px + 4%);
+    background: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
+	display: block;
+    float: left;
+    width: 100%;
+}
+header .col-sm-12{
+    padding: 0px;
+}
+header .col-sm-12 .box-logo{
+    padding-left: 0px;
+}
+header .col-sm-12 .box-menu{
+    padding-right: 0px;
+}
+footer{
+	background: #4a4a4a;
+	padding: 12px 0px;
+    float: left;
+    width: 100%;
+}
+
+.form-main{
+	max-width: 550px;
+    margin: 40px auto 230px; 
+	box-shadow: 1px 1px 10px #ccc;
+	border-radius: 3px;
+}
+.content-form{padding: 40px;}
+.form-main h3{
+	font-size: 30px;
+	color: #fff;
+	background: #1e402b;
+	padding: 14px 0px;
+	margin: 0px;
+	text-align: center;
+	font-weight: normal;
+	border-radius: 3px 3px 0px 0px;
+    text-transform: uppercase;
+    font-family: 'FjallaOne-Regular';
+}
+.content-form strong{
+	font-size: 14px;
+	color: #4a4a4a;
+	font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+}
+.content-form p{
+	font-size: 14px;
+	color: #757575;
+	margin-bottom: 10px;
+}
+.content-form p a{
+	text-decoration: underline;
+	color: #4a4a4a;
+	font-weight: bold;
+}
+.content-form form{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.input-group{margin-bottom: 20px;}
+.input-group label{
+	font-size: 14px;
+	color: #131313;
+	display: block;
+	display: block;
+    margin-bottom: 0px;
+} 
+.input-group input{
+	font-size: 16px;
+	width: 100%;
+	padding: 10px 15px;
+	display: block;
+	border-radius: 4px;
+	margin-top: 5px;
+	box-shadow: 1px 1px 3px #ccc inset;
+	border: 1px solid #979797;
+	color: #000;
+}
+
+.input-submit{
+	text-align: center;
+	padding: 0px 0px 10px;
+}
+.input-submit input{
+	font-size: 18px;
+	color: #fff;
+	background: #60bb82;
+	display: block;
+	padding: 13px 20px;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 0px;
+	border: none;
+	cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'FjallaOne-Regular';
+    letter-spacing: 1px;
+}
+a.f-pass{
+    font-size: 16px;
+    color: #131313;
+    text-decoration: underline;
+    float: left;
+}
+.input-submit input:hover{
+	opacity: 0.8;
+}
+.input-group.w50{
+    width: 50%;
+    float: left;
+    margin-right: 0;
+    padding: 0px 15px;
+    margin-left: -15px;
+}
+.input-group.w50.w_last{
+    margin-right: -15px;
+    margin-left: 30px;
+}
+.f-pass{
+	font-size: 16px;
+	color: #000;
+}
+.copy_right{
+	color:#fff; 
+    font-size: 12px;	
+}
+.content-form form.forgotten-password{
+	margin-top: 30px;
+}
+.content-select{
+    background: #fff;
+    padding: 12px 0px 12px;
+    margin-bottom: 10px;
+    border-top: 1px solid #e8e8e8;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
+    font-size: 14px;
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+.content-select .select2-container{
+    width: 100% !important
+}
+.content-select::before { 
+    content: "";
+    display: block;
+    background-color: #fff;
+    margin-left: calc(-50vw + 50%);
+    width: 100%;
+    height: 53px;
+    position: absolute;
+    top: 0;
+}
+.box-logo.col-sm-4 a img{
+	width: auto;
+    height: 60px;
+}
+.box-logo.col-sm-4{
+    width: 100%;
+    text-align: center;
+    max-width: 100%;
+    flex: 100%;
+}
+.content-form p.text-welcome {
+    font-family: 'LibreFranklin-Regular';
+    font-size: 19px;
+    margin-bottom: 0px;
+    color: #1a1a1a;
+}
+.logged .box-logo.col-sm-4{
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    text-align: left;
+}
+.box-menu ul {
+    text-align: right;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    line-height: 48px;
+}
+.box-menu ul li {
+    display: inline-block;
+    position: relative;
+}
+.box-menu ul li a {
+    padding: 5px 10px;
+    color: #00b9a7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.box-menu ul li.last-li a {
+    color: #fff;
+    background: #00b9a7;
+    padding: 5px 25px;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+.alert.alert-danger ul li{
+    list-style: none;
+    text-align: center;
+}
+.alert.alert-danger ul{
+    padding-left: 0px;
+}
+#form-register .input-group select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #ccc inset;
+    border: 1px solid #979797;
+}
+#form-register label.error{
+    color: red;
+}
+.content-member{
+    padding: 12px calc(30px + 4%);
+}
+.content-tabs h3{
+    padding: 0px;
+    color: #4a4a4a;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 32px;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+.content-tabs .nav-tabs{
+    border-bottom:none;
+}
+.content-tabs .nav-tabs li a.active{
+    color: #00b9a7;
+    border-bottom: 2px solid;
+} 
+ul.nav.nav-tabs li a {
+    color: #4a4a4a;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.3;
+    display: inline-block;
+    padding: 5px 0px;
+    margin-right: 15px;
+}
+.content-member .tab-content {
+    margin-top: 10px;
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%;
+}
+.member-profile .form-group input {
+    padding: 4px 10px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    border-radius: 5px;
+    border-color: #979797;
+    margin-bottom: 15px;
+    font-size: 16px;
+    height: 50px;
+}
+.member-profile .form-group select {
+    padding: 4px 10px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    border-radius: 5px;
+    border-color: #979797;
+    margin-bottom: 15px;
+    font-size: 16px;
+    height: 50px;
+}
+form.member-profile label i {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../images/i.png);
+    background-size: cover;
+    position: relative;
+    top: 3px;
+    left: 4px;
+    cursor: pointer;
+}
+form.member-profile label i .tooltiptext {
+    visibility: hidden;
+    width: 260px;
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    padding: 7px 10px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    font-size: 12px;
+    top: -55px;
+    left: -120px;
+    line-height: 1.3;
+    font-style: normal;
+}
+form.member-profile label i:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip-top::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.member-profile button {
+    background: #00b9a7;
+    color: #fff;
+    font-size: 18px;
+    padding: 6px 20px;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    border-color: #979797;
+    margin-top: 50px;
+}
+form.member-profile {
+    padding-bottom: 80px;
+}
+.member-profile .avatar-image .circle img {
+    width: 130px;
+    border-radius: 50%;
+    height: 130px;
+    border: 1px solid #299c8d;
+    box-shadow: 0px 0px 0px 2px #299c8d;
+}
+.member-profile .avatar-image {
+    position: relative;
+    text-align: center;
+}
+.file-upload {
+    display: none;
+}
+.member-profile .avatar-image .p-image {
+    z-index: 9999;
+    position: absolute;
+    right: calc(50% - 60px);
+    bottom: 0%;
+    cursor: pointer;
+}
+.btnMenu.pull-right{
+    display: none;
+}
+.member-profile .avatar-image .circle {
+    width: 130px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    height: 130px;
+    left: calc(50% - 65px);
+    top: -30px;
+}
+form.member-profile label {
+    margin-bottom: 0px;
+    min-height: 31px;
+    line-height: 37px;
+}
+.alert.alert-success ul{
+    list-style: none;
+    padding-left: 0px;
+}
+label.error{
+    color: red;
+}

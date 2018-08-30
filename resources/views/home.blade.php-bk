@@ -1,0 +1,21 @@
+@extends('app')
+
+@section('styles')
+    
+@stop
+
+@section('content')
+
+<div class="wapper">
+    Home
+
+</div>
+
+
+@stop
+
+@push('scripts-bottom')
+<script type="text/javascript">
+  
+</script>
+@endpush
