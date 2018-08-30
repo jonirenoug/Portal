@@ -10,14 +10,15 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/index.css') }}">
     
 </head>
-<body class="showpopup onchange not-login">
+<body class="showpopup onchange @if(!Session::has('userlogin')) not-login @else logged @endif ">
     <header>
         <div class="col-sm-12">
             <div class="box-logo col-sm-4">
-                <a href="{{ url('/') }}" class="logo">
+                <a href="{{ url('/home') }}" class="logo">
                     <img src="{{ asset('images/newlogo.png') }}">
                 </a>
                 <div class="btnMenu pull-right">
@@ -27,7 +28,7 @@
                     </a>
                 </div>
             </div>
-            @if(Session::has('user'))
+            @if(Session::has('userlogin'))
             <div class="box-menu col-sm-8">
                 <ul>
                     <li>
@@ -54,7 +55,6 @@
     <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
     <script src="{{ asset('js/dev.js?t=' . uniqid()) }}"></script>
-
     @stack('scripts-bottom')
 
 </body>

@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Members;
 
 class User extends Authenticatable
 {
@@ -35,5 +36,14 @@ class User extends Authenticatable
             return true;
         }
         return false;
+    }
+    public static function getUserByToken($token){
+        return User::where('remember_token', $token)->first();
+    }
+    public static function getUserByEmail($email){
+        return User::where('email',$email)->first();
+    }
+    public static function valueMember($id){
+        return Members::where('id_user',$id)->first();
     }
 }

@@ -55,7 +55,6 @@
     <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/dev.js?t=' . uniqid()) }}"></script>
-    </footer>
 
     @stack('scripts-bottom')
 
